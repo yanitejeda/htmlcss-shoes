@@ -2,10 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header ul li{
+    font-weight: 700;
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 
+header ul{
+    float: right;
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: white;
+}
 .full-height-conteiner{
-    width: 500px;
-    height: 500px;
+    height: 100vh;
+    position: relative;
+}
+
+.img-shoes img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+#img-1 span, #img-2 span{
+    color: yellow;
+}
+#img-3 span{
+    color: green;
+}
+
+#img-1{
     background-color: red;
+}
+#img-2{
+    background-color: green;
+}
+#img-3{
+    background-color: yellow;
 }
